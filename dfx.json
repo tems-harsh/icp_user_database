@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "user_dbs_backend": {
+      "main": "src/user_dbs_backend/main.mo",
+      "type": "motoko"
+    },
+    "user_dbs_frontend": {
+      "dependencies": [
+        "user_dbs_backend"
+      ],
+      "source": [
+        "src/user_dbs_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "user_dbs_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
