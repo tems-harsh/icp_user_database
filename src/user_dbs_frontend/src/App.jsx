@@ -30,12 +30,12 @@ function App() {
 
   return (
     <main className='text-center'>
+      <p classname='text-2xl mt-6'>User Database</p>
+      <form onSubmit={handleAddUser} className='flex flex-col items-center mt-4 gap-y-3'>
 
-      <form onSubmit={handleAddUser} className='flex flex-col items-center mt-6 gap-y-3'>
-
-      <input className='p-3 border rounded' placeholder='Enter name' id='name' />
-      <input className='p-3 border rounded' placeholder='Enter age' id='age' />
-      <select id='title'>
+      <input className='p-3 border rounded' placeholder='Enter name' id='name' required />
+      <input type='number' className='p-3 border rounded' placeholder='Enter age' id='age' required />
+      <select id='title' required>
         <option value="Student" className='m-3'>Student</option>
         <option value="Doctor" className='m-3'>Doctor</option>
         <option value="Professor" className='m-3'>Professor</option>
