@@ -30,7 +30,7 @@ function App() {
 
   return (
     <main className='text-center'>
-      <p classname='text-2xl mt-6'>User Database</p>
+      <p className='text-2xl mt-6'>User Database</p>
       <form onSubmit={handleAddUser} className='flex flex-col items-center mt-4 gap-y-3'>
 
       <input className='p-3 border rounded' placeholder='Enter name' id='name' required />
